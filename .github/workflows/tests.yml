@@ -1,0 +1,14 @@
+name: Tests
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: epitechcontent/epitest-docker:latest
+    steps:
+      - uses: actions/checkout@v2.0.0
+      - name: Build App tests
+        run: make tests
+      - name: Run tests
+        run: ./tests_run
