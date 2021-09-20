@@ -3,4 +3,4 @@ project(myDate)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(main.cpp myDate.cpp myDate.h)
+add_executable(myDate main.cpp myDate.cpp myDate.h)
