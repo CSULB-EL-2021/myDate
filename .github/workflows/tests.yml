@@ -12,3 +12,5 @@ jobs:
         run: make tests
       - name: Run tests
         run: ./tests_run
+      - name: Coverage
+        run: gcovr --exclude tests
