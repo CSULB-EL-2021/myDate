@@ -41,7 +41,24 @@ myDate::myDate(): _month(5), _day(11), _year(1959)
 {}
 
 myDate::myDate(int M, int D, int Y): _month(M), _day(D), _year(Y)
-{}
+{
+    if (!isValidDate()) {
+        _month = 5;
+        _day = 11;
+        _year = 1959;
+    }
+}
+
+bool myDate::isValidDate() const
+{
+    int mm, dd, yy;
+    int tmp = Greg2Julian(_month, _day, _year);
+
+    Julian2Greg(tmp, mm, dd, yy);
+
+    return !(mm != _month || dd != _day || yy != _year);
+}
+
 
 int myDate::getMonth() const
 {

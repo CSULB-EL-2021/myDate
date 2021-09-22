@@ -38,4 +38,4 @@ fclean:		clean
 re:		fclean all
 
 tests: $(TEST_OBJS)
-		$(CXX) $(TEST_OBJS) -lcriterion $(CXXFLAGS) -o tests_run
+		$(CXX) $(TEST_OBJS) -lcriterion --coverage $(CXXFLAGS) -o tests_run

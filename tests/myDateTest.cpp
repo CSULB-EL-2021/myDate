@@ -86,3 +86,19 @@ Test(myDate, dayName) {
 
     cr_assert(tmp->dayName() == "Friday");
 }
+
+Test(myDate, invalid_month) {
+    auto tmp = new myDate(23, 3, 2000);
+
+    cr_assert(tmp->getDay() == 11);
+    cr_assert(tmp->getMonth() == 5);
+    cr_assert(tmp->getYear() == 1959);
+}
+
+Test(myDate, invalid_day) {
+    auto tmp = new myDate(9, 31, 2021);
+
+    cr_assert(tmp->getDay() == 11);
+    cr_assert(tmp->getMonth() == 5);
+    cr_assert(tmp->getYear() == 1959);
+}

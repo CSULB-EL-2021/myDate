@@ -2,3 +2,11 @@
 > Due date 09/72/2021
 
 Date simple operation
+
+---
+
+### Run tests
+```bash
+$   make tests
+$   ./tests_run
+```

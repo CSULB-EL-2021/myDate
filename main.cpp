@@ -3,7 +3,7 @@
 
 int main()
 {
-    auto tmp = new myDate(3, 3, 2000);
+    auto tmp = new myDate(10, 31, 2021);
     tmp->display();
 
     return 0;

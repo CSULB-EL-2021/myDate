@@ -38,6 +38,7 @@ class myDate {
         int _month;
         int _day;
         int _year;
+        bool isValidDate() const;
 
 };
 
