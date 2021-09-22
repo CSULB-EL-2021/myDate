@@ -1,5 +1,5 @@
 # CECS 282-01 - Prog 2 – my Date
-> Due date 09/72/2021
+> Due date 09/27/2021
 
 Date simple operation
 
